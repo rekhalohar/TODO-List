@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e0863);
+    padding: 10px;
+}
+.to-do-app img{
+    height: 50px;
+    width: 50px;
+}
+.to-do-app{
+    width: 100%;
+    background: #fff;
+    padding:60px 40px 80px;
+    max-width: 540px;
+    margin :100px auto;
+    border-radius: 10px;
+
+}
+.to-do-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.row{
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;
+   background: #edeef0;
+   border-radius: 30px;
+   padding-left: 20px;
+   margin-bottom: 25px;
+
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+button{
+    border: none;
+    outline: none;
+    background: #3c63087d;
+    padding: 16px 50px;
+    border-radius: 40px;
+    font-size: 16px;
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding:12px 8px 12px 20px ;
+    user-select: none;
+    position: relative;
+
+}
+ul li::before{
+    content: '';
+    height: 18px;
+    width: 18px;
+    position: relative;
+    /* You can adjust the border styling */
+    background-image: url('radio.png');
+    background-size: cover; /* Ensure the background image covers the entire space */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    display: inline-block; /* Display the custom radio button */
+    cursor: pointer;
+    /* margin: 3px; */
+    padding: 5px;
+    background-position:center;
+    background-size: cover;
+    top: 10px;
+    left: 2px;
+    
+}
+ ul li.checked{
+    font-size: 18px;
+    padding: 15px;
+   
+}
+ul li.checked::before{
+    background-image: url(radio\ back.png);
+}
+
+ul li span{
+   position: absolute;
+   right: 0;
+   top: 5px;
+   width: 40px;
+   height: 40px;
+   font-size: 22px;
+   color: #555;
+   line-height: 40px;
+
+}
+ul li span:hover{
+    color: #3c63087d;
+}
+
